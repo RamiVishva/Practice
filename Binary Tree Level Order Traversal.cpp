@@ -47,3 +47,27 @@ public:
     return ans;
     }
 };
+
+//Using Recursion
+
+class Solution1 {
+    vector<vector<int>> ans;
+    void level(TreeNode* root, int c){
+       
+        if(root==NULL){
+            return;
+        }
+        if(ans.size()==c){
+            ans.push_back(vector<int>());
+        }
+        ans[c].push_back(root->val);
+        c++;
+        level(root->left,c);
+        level(root->right,c);
+    }
+public:
+    vector<vector<int>> levelOrder(TreeNode* root) {
+        level(root,0);
+        return ans;
+    }
+};
