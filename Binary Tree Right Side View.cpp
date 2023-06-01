@@ -1,5 +1,5 @@
 //Topic : Binary Tree
-//Link : https://leetcode.com/problems/binary-tree-right-side-view/description/?envType=list&envId=retrjm33
+//Link : https://leetcode.com/problems/binary-tree-right-side-view/
 
 #include <bits/stdc++.h>
 using namespace std;
